@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>A minha cidade</title>
+</head>
+<body>
+    <header>
+        <h1>Lisboa</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="viagem.html">Viagem</a>
+        </nav>
+        <img src="images/Lisboa Imagem.jpg" alt="Cidade de Lisboa">
+    </header>
+    <main>
+       <h2>Quizz</h2>
+       <p>Vamos fazer um pequeno quizz sobre Lisboa</p> 
+       
+       <form id="lisboaQuizz" method="get" action="https://postman-echo.com/get">
+        <fieldset>
+            <legend>Identificação:</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required autocomplete="nome" size="20" maxlength="50" autofocus><br><br>
+
+            <label for="apelido">Apelido:</label>
+            <input type="text" id="apelido" name="apelido" placeholder="Digite seu apelido" required autocomplete="family-name" size="20" maxlength="50"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu email" required autocomplete="email" size="30" maxlength="50"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sobre Lisboa:</legend>
+
+            <label for="bairro">Qual é o seu bairro favorito em Lisboa?</label><br>
+            <input type="text" id="bairro" name="bairro" placeholder="Digite um bairro" size="30"><br><br>
+
+            
+            <p>Qual é o monumento mais conhecido de Lisboa?</p>
+            <input type="radio" id="torre" name="monumento" value="Torre de Belém" required>
+            <label for="torre">Torre de Belém</label><br>
+            <input type="radio" id="cristo" name="monumento" value="Cristo Rei">
+            <label for="cristo">Cristo Rei</label><br>
+            <input type="radio" id="jeronimos" name="monumento" value="Mosteiro dos Jerónimos">
+            <label for="jeronimos">Mosteiro dos Jerónimos</label><br><br>
+
+            
+            <p>Quais destes são bairros de Lisboa? (Pode escolher mais do que um)</p>
+            <input type="checkbox" id="alfama" name="bairro_lisboa" value="Alfama" autocomplete="off">
+            <label for="alfama">Alfama</label><br>
+            <input type="checkbox" id="baixa" name="bairro_lisboa" value="Baixa">
+            <label for="baixa">Baixa</label><br>
+            <input type="checkbox" id="bairroalto" name="bairro_lisboa" value="Bairro Alto">
+            <label for="bairroalto">Bairro Alto</label><br><br>
+
+            
+            <label for="data_visita">Quando foi a última vez que visitou Lisboa?</label>
+            <input type="date" id="data_visita" name="data_visita" form="lisboaQuizz"><br><br>
+
+            <label for="hora_visita">A que horas foi?</label>
+            <input type="time" id="hora_visita" name="hora_visita" form="lisboaQuizz"><br><br>
+
+            
+            <label for="cor_lisboa">Escolha uma cor que te faz lembrar Lisboa:</label>
+            <input type="color" id="cor_lisboa" name="cor_lisboa" value="#ffcc00"><br><br>
+
+            
+            <label for="habitantes">Quantos habitantes estima que vivem em Lisboa? (em milhões)</label>
+            <input type="number" id="habitantes" name="habitantes" min="0" max="5" step="0.1" placeholder="Ex: 0.5"><br><br>
+
+            
+            <label for="grau_satisfacao">Quão satisfeito está com Lisboa numa escala de 0 a 10?</label><br>
+            <input type="range" id="grau_satisfacao" name="grau_satisfacao" min="0" max="10" step="1">
+            <span id="rangeValueDisplay"></span><br><br>
+
+            
+            <label for="foto_lisboa">Carregue uma imagem de Lisboa:</label><br>
+            <input type="image" src="images/PonteTejo4KSmoll.jpg" alt="Carregar Imagem" form="lisboaQuizz"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <input type="reset" value="Limpar Formulário">
+            <input type="submit" value="Submeter Respostas">
+        </fieldset>
+    </form>
+       
+    </main>
+    <footer>
+        <p>DIW 2024</p>
+    </footer>
+</body>
+</html>

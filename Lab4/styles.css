@@ -1,0 +1,62 @@
+.lisboa {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50; /* Bright green */
+}
+
+.lisboa h1 {
+    margin: 0;
+    color: white;
+    font-size: 36px; /* Large and bold */
+    font-weight: bold;
+}
+
+.description{
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2%;
+}
+
+.content{
+    background-color: rgb(192, 192, 192);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+body{
+    background-color: rgb(192, 192, 192);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #424242;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px; /* Increased padding for a button-like appearance */
+    margin: 0; /* Remove margins to prevent unwanted spacing */
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #666; /* Darken on hover */
+    color: white;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #424242;
+    color: white;
+}
+
+header{
+    background-color: rgb(192, 192, 192);
+}
+

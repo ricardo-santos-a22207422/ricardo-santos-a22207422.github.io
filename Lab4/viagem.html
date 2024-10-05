@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>A minha cidade</title>
+</head>
+<body>
+    <header>
+        <h1>Lisboa</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="viagem.html">Viagem</a>
+        </nav>
+        <img src="images/Lisboa Imagem.jpg" alt="Cidade de Lisboa">
+    </header>
+    <main>
+       <h2>Vamos fazer uma viagem a Lisboa</h2>
+       <h3>Preencha o seguinte formulário para planear a sua viagem</h3>
+       
+       <form method="get" action="https://postman-echo.com/get">
+        <fieldset>
+            <legend>Identificação:</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required autocomplete="nome" size="20" maxlength="50" autofocus><br><br>
+
+            <label for="apelido">Apelido:</label>
+            <input type="text" id="apelido" name="apelido" placeholder="Digite seu apelido" required autocomplete="family-name" size="20" maxlength="50"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Digite seu email" required autocomplete="email" size="30" maxlength="50"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <Legend>Detalhes da Viagem:</Legend>
+            <label for="data_partida">Data de Partida:</label>
+            <input type="date" id="data_partida" name="data_partida" required><br><br>
+
+            <label for="data_retorno">Data de Chegada:</label>
+            <input type="date" name="data_retorno" id="data_retorno"><br><br>
+
+            <label for="passageiros">Passageiros:</label>
+            <input type="number" name="passageiros" id="passageiros" placeholder="Número de passageiros"><br><br>
+
+            <label for="transporte">Método de Transporte:</label>
+            <input type="text" list="metodos" name="transporte" id="transporte" placeholder="Escolha um Transporte"><br><br>
+            <datalist id="metodos">
+                <option value="Carro"></option>
+                <option value="Avião"></option>
+                <option value="Barco"></option>
+                <option value="Comboio"></option>
+            </datalist>
+
+            <label for="serviço">Escolha um Nível de Serviço:</label><br>
+            <select name="serviço" id="serviço">
+                <option value="básico" selected>Básico</option>
+                <option value="premium">Premium</option>
+            </select><br><br>
+
+            <label for="especificações">Pedidos Especiais:</label><br>
+            <textarea name="especificações" id="especificações" cols="30" rows="10" placeholder="Escreva quaisquer especificações que veja necessárias para a sua viagem"></textarea><br><br>
+
+            <label for="gastos">Gastos:</label>
+            <input type="number" name="gastos_p" id="gastos" placeholder="Por Pessoa" min="20" max="5000">
+            <input type="number" name="gastos_d" id="gastos" placeholder="Por Dia" min="50" max="5000">
+        </fieldset>
+
+        <fieldset>
+            <label for="buttons"></label>
+            <input type="reset" value="Limpar Formulário" id="buttons">
+            <input type="submit" value="Submeter Respostas" id="buttons">
+        </fieldset>
+       </form>
+    </main>
+    <footer>
+        <p>DIW 2024</p>
+    </footer>
+</body>
+</html>
