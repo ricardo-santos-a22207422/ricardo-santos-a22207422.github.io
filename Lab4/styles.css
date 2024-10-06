@@ -63,7 +63,7 @@ header{
     background-color: rgb(192, 192, 192);
 }
 
-img{
+#mainimage{
     width: 100%;
     height: auto;
     margin: 10px 0;
@@ -82,6 +82,10 @@ img{
     font-size: 19px;
 }
 
+#poema p{
+    font-style: italic;
+}
+
 label {
     font-size: small;
 }
@@ -93,4 +97,12 @@ input {
 label, input {
     display: block;
     margin-bottom: 10px;
+}
+
+#video iframe{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 40%;
+    height: 200px;
 }
