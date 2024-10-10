@@ -1,0 +1,231 @@
+.lisboa {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50; /* Bright green */
+}
+
+.lisboa h1 {
+    margin: 0;
+    color: white;
+    font-size: 36px; /* Large and bold */
+    font-weight: bold;
+}
+
+.description{
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2%;
+}
+
+.content{
+    background-color: rgb(192, 192, 192);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(192, 192, 192);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #424242;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px; /* Increased padding for a button-like appearance */
+    margin: 0; /* Remove margins to prevent unwanted spacing */
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: #666; /* Darken on hover */
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: #424242;
+    color: white;
+    padding: 20px;
+}
+
+header{
+    background-color: rgb(192, 192, 192);
+}
+
+#mainimage{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+#fotografias h3, #video h3, #poema h3{
+    color: #4CAF50;
+    font-size: 24px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#poema h4{
+    color: #4CAF50;
+    font-size: 19px;
+}
+
+#poema p{
+    font-style: italic;
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#video iframe{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width: 40%;
+    height: 200px;
+}
+
+#restaurantes h3{
+    color: #4CAF50;
+    font-size: 24px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#restaurantes ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#restaurantes li {
+    background-color: #f9f9f9; /* Light background for each item */
+    margin-bottom: 10px; /* Space between each item */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+#restaurantes li:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+}
+
+#restaurantes a {
+    display: block; /* Make links fill the entire list item */
+    color: #4CAF50; /* Match the accent color */
+    padding: 10px 15px; /* Add some padding for better spacing */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Consistent font size */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+#restaurantes a:hover {
+    color: #333; /* Darker color on hover */
+}
+
+#monumentos ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#monumentos li {
+    background-color: #f9f9f9; /* Light background for each item */
+    margin-bottom: 10px; /* Space between each item */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+#monumentos li:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+}
+
+#monumentos a {
+    display: block; /* Make links fill the entire list item */
+    color: #4CAF50; /* Match the accent color */
+    padding: 10px 15px; /* Add some padding for better spacing */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Consistent font size */
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+#monumentos a:hover {
+    color: #333; /* Darker color on hover */
+}
+
+#monumentos h3{
+    color: #4CAF50;
+    font-size: 24px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#notmiss h3{
+    color: #4CAF50;
+    font-size: 24px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#notmiss {
+    background-color: #fff; /* White background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding around the content */
+    margin: 20px 0; /* Margin to separate it from other sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#notmiss ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+#notmiss li {
+    background-color: #f4f4f4; /* Light gray background for each item */
+    margin: 10px 0; /* Space between items */
+    padding: 10px; /* Padding for each list item */
+    border-radius: 4px; /* Slight rounding of corners */
+    font-size: 16px; /* Increase font size for readability */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+#notmiss li:hover {
+    background-color: #e0e0e0; /* Darker gray on hover for interactivity */
+}
+
+#spotfoto h3{
+    color: #4CAF50;
+    font-size: 24px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#spotfoto iframe{
+    border-radius: 5px;
+}
