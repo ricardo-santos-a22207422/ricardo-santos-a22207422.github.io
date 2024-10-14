@@ -6,4 +6,4 @@ Aqui vou desenvolver várias páginas com diferentes funcionalidades e estilos �
 
 ## Update
 
-Perdido no styling da página index.html com alguns "erros" a corrigir!!
+CSS is a blessing and a curse 💀
