@@ -3,3 +3,152 @@
     padding:0;  
     box-sizing: border-box; /* medidas sao tomadas da borda */
 }
+
+header {
+    height: 9vh; 
+    background: #252525;
+    color: white;
+    top: 0; 
+    
+    /* alinhando logo e menu */
+    display:flex;
+    justify-content: space-between;  
+    align-items: center;
+  }
+
+  header h1{
+    font-size: 2em;  
+    padding: 1em;
+  }
+
+  header nav {
+    display:flex;
+    justify-content: flex-end;  
+  }
+
+  nav a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: lightgray;
+  }
+
+  nav a:last-child{
+    background-color: #4e4e4e;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:last-child:hover{
+    background-color: #707070;
+  }
+
+  #poema{
+    display: flex;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 50vh; /* Height of the poem container */
+    width: 100vw; /* Full width of the viewport */
+    
+    font-family: 'Times New Roman', serif; /* Example font for the poem */
+    font-weight: bold;
+    line-height: 1.5; /* Spacing between lines */
+    font-size: 16px; /* Font size for the poem */
+    text-align: center;
+
+    background-color: #383838;
+    color: white;
+}
+
+.mainpoem span {
+    display: block; /* Each line will be on a new line */
+}
+
+.poet {
+    font-size: 12px; /* Smaller font size for the poet's name */
+    font-style: italic; /* Italic style for the poet's name */
+    margin-top: 10px; /* Space above the poet's name */
+    color: rgb(161, 161, 161); /* Color for the poet's name */
+    text-align: end;
+}
+
+#paisagem{
+  background-color: #383838;
+}
+
+#paisagem div{
+  position: relative;
+}
+
+#paisagem img{
+  width: 100vw;
+}
+
+#paisagem p{
+  position: absolute;
+  font-size: 17px;
+  bottom: 10px;
+  right: 5px;
+}
+
+#paisagem a{
+  color: red;
+}
+
+#cidades{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5vw;
+  background-color: #383838;
+}
+
+#cidades section{
+  display: flex;
+  margin: 10px
+}
+
+#cidades img{
+  width: 100px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+#cidades div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100%;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #4e4e4e;
+  transition: background-color 0.3s;
+}
+
+#cidades div:hover{
+  background-color: #707070;
+}
+
+#experimenta{
+  display: flex;
+  background-color: #383838;
+}
+
+#experimenta div{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /*visibility: hidden;*/
+  margin: 100px;
+  opacity: 0;
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+
+#experimenta div:hover{
+  opacity: 1;
+}
