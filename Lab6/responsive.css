@@ -5,28 +5,31 @@ aside {grid-area: aside;}
 footer {grid-area: footer;}
 
 @media(max-width: 480px) and (orientation: portrait){
+    *{
+        max-width: 99%;
+    }
+    
     body{
         display: grid;
         width: 100vw;
         height: 100vh;
 
-        grid-template-columns: 1 fr;
-        grid-template-rows: 5vw 7vw 1 fr 7vw 7vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 4fr 3fr 2fr;
         grid-template-areas:
             'header'
             'nav'
             'aside'
             'main'
             'footer';
-
+        
         grid-gap: 10px;
-        background-color: rgb(6, 4, 116);
         padding: 10px; 
     }
     nav a{display: inline-block;}
 }
 
-@media(max-width: 768px) and (orientation: landscape){
+/*@media(max-width: 768px) and (orientation: landscape){
     body{
         display: grid;
         width: 100vw;
@@ -34,4 +37,4 @@ footer {grid-area: footer;}
 
         
     }
-}
+}*/
