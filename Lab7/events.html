@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Solar System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Solar System</h1>
+        <p id="header-desc">Explore the wonders of our celestial neighborhood.</p>
+    </header>
+
+    <main>
+        <section id="planets">
+            <h2>Planets</h2>
+            <ul>
+                <li onmouseover="highlight(this)" onmouseout="removeHighlight(this)">Mercury</li>
+                <li onmouseover="highlight(this)" onmouseout="removeHighlight(this)">Venus</li>
+                <li onmouseover="highlight(this)" onmouseout="removeHighlight(this)">Earth</li>
+                <li onmouseover="highlight(this)" onmouseout="removeHighlight(this)">Mars</li>
+                <li onmouseover="highlight(this)" onmouseout="removeHighlight(this)">Jupiter</li>
+                <li onmouseover="highlight(this)" onmouseout="removeHighlight(this)">Saturn</li>
+                <li onmouseover="highlight(this)" onmouseout="removeHighlight(this)">Uranus</li>
+                <li onmouseover="highlight(this)" onmouseout="removeHighlight(this)">Neptune</li>
+            </ul>
+        </section>
+
+        <section id="quiz">
+            <h2>Space Quiz</h2>
+            <p>Click the button to see a fun fact about the Solar System:</p>
+            <button onclick="showFact()">Show a Fun Fact</button>
+            <p id="fact"></p>
+        </section>
+
+        <section id="color-changer">
+            <h2>Change Background Color</h2>
+            <p>Choose your favorite background color:</p>
+            <input type="color" id="colorPicker" onchange="changeBackgroundColor()">
+        </section>
+    </main>
+
+    <footer>
+        <p>Scroll to the bottom to reveal a message!</p>
+        <div id="secret-message" style="display: none;">🌟 You are a star! 🌟</div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
