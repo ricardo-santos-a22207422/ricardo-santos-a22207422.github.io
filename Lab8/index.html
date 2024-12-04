@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<nav>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="events.html">Events Page</a> - Lab8</li>
+</nav>
+
+<body>
+    <p id="passar">1. Passa por aqui</p>
+
+    <p id="paintp">2. Pinta-me <button id="paint" data-color="red">Red</button> <button data-color="green" id="paint">Green</button> <button id="paint" data-color="blue">Blue</button></p>
+
+    <p id="cores">3. Experimenta escrever <input type="text" name="noSubmit" id="noSubmit" placeholder="Type anything" onkeydown="mudaCor()"></p>
+
+    <p>4. Escolha uma cor em Inglês <select name="bodyColor" id="bodyColor"><option value="white" selected>White</option><option value="red">Red</option><option value="blue">Blue</option></select></p>
+
+    <p id="count">5. <button onclick="count()">Conta!</button> <span id="counterHolder"></span></p>
+
+    <p>6. 
+        <form>
+            <input type="text" name="name" id="name" placeholder="Type Name">
+            <input type="text" name="age" id="age" placeholder="Type Age"> 
+            <input type="submit" value="Submit Values">
+        </form>
+    </p>
+    <div id="message"></div>
+
+    <p id="auto">7. Automatic Counter: <span id="autoPlaceholder">0</span></p>
+    <script src="indexEvents.js"></script>
+</body>
+</html>
