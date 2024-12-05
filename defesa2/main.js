@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
+  document.getElementById("lessInfo").addEventListener("click", exibirLess());
+
   
   // Função para exibir produtos no HTML
   function exibirProdutos(produtos) {
@@ -67,6 +69,36 @@ document.addEventListener("DOMContentLoaded", () => {
       const item = criarProduto(produto);
       container.appendChild(item);
     });
+  }
+
+  function exibirLess(produtos) {
+    const container = document.getElementById("produtos");
+    container.innerHTML = "";
+    produtos.forEach(produto => {
+      const item = criaLess(produto);
+      container.appendChild(item);
+    });
+  }
+
+  function criaLess(produto) {
+      const artigo = document.createElement("article");
+    
+      const titulo = document.createElement("h3");
+      titulo.textContent = produto.title;
+    
+      const imagem = document.createElement("img");
+      imagem.src = produto.image;
+      imagem.alt = produto.title
+          
+      const preco = document.createElement("p");
+      preco.textContent = `Preço: €${produto.price.toFixed(2)}`;
+    
+      const botao = document.createElement("button");
+      botao.textContent = "+ Adicionar ao Cesto";
+      botao.addEventListener("click", () => adicionarAoCesto(produto));
+    
+      artigo.append(titulo, imagem, preco, botao);
+      return artigo;
   }
   
   // Função para criar a exibição de um produto
