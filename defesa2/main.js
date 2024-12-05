@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
         // Aplicar pesquisa
         if (pesquisa) {
-          produtosFiltrados = produtosFiltrados.filter(produto => produto.title.toLowerCase().includes(pesquisa));
+          produtosFiltrados = produtosFiltrados.filter(produto => produto.title.toLowerCase().includes(pesquisa) || produto.description.toLowerCase().includes(pesquisa));
         }
   
         // Ordenar produtos
