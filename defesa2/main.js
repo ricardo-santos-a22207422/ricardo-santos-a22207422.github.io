@@ -47,10 +47,17 @@ document.addEventListener("DOMContentLoaded", () => {
   
         // Ordenar produtos
         produtosFiltrados.sort((a, b) => ordenacao === "asc" ? a.price - b.price : b.price - a.price);
+
+        document.getElementById("selectAll").addEventListener("click", () => {
+          produtosFiltrados.foreach(produto => {
+            adicionarAoCesto(produto);
+          })
+        })
   
         exibirProdutos(produtosFiltrados);
       });
   }
+
   
   // Função para exibir produtos no HTML
   function exibirProdutos(produtos) {
@@ -135,8 +142,13 @@ function atualizaCesto() {
     couponInput.type = "text";
     couponInput.id = "coupon";
     couponInput.placeholder = "Digite seu cupão";
+
+    const moradaInput = document.createElement("input");
+    moradaInput.id = "morada";
+    moradaInput.type = "text";
+    moradaInput.placeholder = "Insira Morada";
   
-    questionario.append(estudanteLabel, estudanteCheckbox, document.createElement("br"), couponLabel, couponInput);
+    questionario.append(estudanteLabel, estudanteCheckbox, document.createElement("br"), couponLabel, couponInput, moradaInput);
     cestoContainer.appendChild(questionario);
   
     // Adicionar o botão de checkout
@@ -185,12 +197,14 @@ function finalizarCompra() {
 
   const estudante = document.getElementById("estudante").checked;
   const coupon = document.getElementById("coupon").value.trim();
+  const morada = document.getElementById("morada").value.trim();
 
   const body = {
     products: idsProdutos,
     student: estudante,
     coupon: coupon || null, // Envia null caso o campo esteja vazio
-    name: "Maria Lisboa" // Este valor pode ser dinâmico
+    name: "Maria Lisboa", // Este valor pode ser dinâmico
+    address: morada
   };
 
   fetch('https://deisishop.pythonanywhere.com/buy/', {
