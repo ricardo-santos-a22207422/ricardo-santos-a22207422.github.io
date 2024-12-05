@@ -20,9 +20,25 @@
   </header>
 
   <main>
+    <!-- Seção de Produtos -->
+    <section id="filtros">
+      <select id="categoriaFiltro">
+        <option value="">Todas as Categorias</option>
+      </select>
+      <select id="ordenacaoPreco">
+        <option value="asc">Preço: Menor para Maior</option>
+        <option value="desc">Preço: Maior para Menor</option>
+      </select>
+      <input type="text" id="pesquisaProduto" placeholder="Pesquisar produto">
+    </section>
+
     <section id="produtos"></section>
+
+    <!-- Seção do Cesto -->
     <aside id="cesto">
       <h2>Cesto de Compras</h2>
+      <!-- Placeholder para o questionário e resultados do checkout -->
+      <div id="resultadoCheckout"></div>
     </aside>
   </main>
 
@@ -30,7 +46,6 @@
     <p>© 2024 Loja Online. Todos os direitos reservados.</p>
   </footer>
 
-  <!-- <script src="produtos.js"></script> -->
   <script src="main.js"></script>
 </body>
 </html>
